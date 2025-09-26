@@ -24,6 +24,8 @@ def play_game(lucky_number, dice_value1, dice_value2):
         return "Amazing! You rolled your lucky number twice and won!"
     elif total_roll == 12:
         return "Jackpot! You won the grand prize!"
+    elif 7 <= total_roll <= 9:
+        return "Nice Roll! You won a medium prize."
     
 
 def main():
