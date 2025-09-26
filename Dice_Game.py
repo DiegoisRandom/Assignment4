@@ -12,15 +12,15 @@ def roll():
     return dice_roll
 
 lucky_number = 3
-dice_value1 = roll()
-dice_value2 = roll()
+d1 = roll()
+d2 = roll()
 
 
-def play_game(lucky_number, dice_value1, dice_value2):
+def play_game(lucky_number, d1, d2):
 
-    total_roll = dice_value1 + dice_value2
+    total_roll = d1 + d2
 
-    if dice_value1 == lucky_number and dice_value2 == lucky_number:
+    if d1 == lucky_number and d2 == lucky_number:
         return "Amazing! You rolled your lucky number twice and won!"
     elif total_roll == 12:
         return "Jackpot! You won the grand prize!"
@@ -35,7 +35,28 @@ def play_game(lucky_number, dice_value1, dice_value2):
     
 
 def main():
-    play_game()
+    lucky_number = int(input("Enter a lucky number: "))
+    d1 = roll()
+    d2 = roll()
+    total = d1 + d2
+
+    print("" + str(total) + " - " + str(play_game(lucky_number, d1, d2)))
+    
+    lucky_number = int(input("Enter a lucky number: "))
+    d1 = roll()
+    d2 = roll()
+    total = d1 + d2
+
+    print("" + str(total) + " - " + str(play_game(lucky_number, d1, d2)))
+
+
+    lucky_number = int(input("Enter a lucky number: "))
+    d1 = roll()
+    d2 = roll()
+    total = d1 + d2
+
+    print("" + str(total) + " - " + str(play_game(lucky_number, d1, d2)))
+
 
 
 if __name__ == "__main__":
