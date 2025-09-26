@@ -64,7 +64,28 @@ def test_play_game():
     #Result
     print("Testing 2 for play game have passed.")
 
-    """ Test 3 for 7-9 """
+    """ Test 3 for 10-11 """
+
+    #Setup
+
+    dice_value1 = 5
+    dice_value2 = 5
+    lucky_number = 3
+
+    expected = "Great Roll! You won a large prize!"
+    
+    #Invoke
+
+    actual = Dice_Game.play_game(lucky_number, dice_value1, dice_value2)
+
+    #Analyze
+
+    assert actual == expected
+
+    #Result
+    print("Testing 3 for play game have passed.")
+
+    """ Test 4 for 7-9 """
 
     #Setup
 
@@ -83,7 +104,7 @@ def test_play_game():
     assert actual == expected
 
     #Result
-    print("Testing 3 for play game have passed.")
+    print("Testing 4 for play game have passed.")
 
 
 
