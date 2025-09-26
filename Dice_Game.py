@@ -30,6 +30,8 @@ def play_game(lucky_number, dice_value1, dice_value2):
         return "Nice Roll! You won a medium prize."
     elif 5 <= total_roll <= 6:
         return "Decent. You won a small prize."
+    elif 1 <=  total_roll <= 4:
+        return "Better luck next time."
     
 
 def main():
