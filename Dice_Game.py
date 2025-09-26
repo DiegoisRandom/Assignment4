@@ -11,10 +11,23 @@ def roll():
     dice_roll = random.randint(0,6)
     return dice_roll
 
+lucky_number = 3
+dice_value1 = roll()
+dice_value2 = roll()
+
+
+def play_game(lucky_number, dice_value1, dice_value2):
+
+    total_roll = dice_value1 + dice_value2
+
+    if dice_value1 == lucky_number and dice_value2 == lucky_number:
+        return "Amazing! You rolled your lucky number twice and won!"
+    elif total_roll == 12:
+        return "Jackpot! You won the grand prize!"
 
 def main():
-    roll()
-    
+    play_game()
+
 
 if __name__ == "__main__":
     main()
