@@ -107,6 +107,27 @@ def test_play_game():
     print("Testing 4 for play game have passed.")
 
 
+    """ Test 5 for 5-6 """
+
+    #Setup
+
+    dice_value1 = 2
+    dice_value2 = 3
+    lucky_number = 3
+
+    expected = "Decent. You won a small prize."
+    
+    #Invoke
+
+    actual = Dice_Game.play_game(lucky_number, dice_value1, dice_value2)
+
+    #Analyze
+
+    assert actual == expected
+
+    #Result
+    print("Testing 5 for play game have passed.")
+
 
 def main():
     roll_test()
