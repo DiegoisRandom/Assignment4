@@ -24,6 +24,7 @@ def play_game(lucky_number, dice_value1, dice_value2):
         return "Amazing! You rolled your lucky number twice and won!"
     elif total_roll == 12:
         return "Jackpot! You won the grand prize!"
+    
 
 def main():
     play_game()

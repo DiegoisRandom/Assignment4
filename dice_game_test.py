@@ -23,6 +23,7 @@ def roll_test():
     print("Testing for roll test passed.")
 
 def test_play_game():
+    """ Test 1 for lucky number """
     #Setup
 
     dice_value1 = 3
@@ -41,6 +42,27 @@ def test_play_game():
 
     #Result
     print("Testing for play game have passed.")
+
+    """ Test 2 for 12 """
+     
+    #Setup
+
+    dice_value1 = 6
+    dice_value2 = 6
+    lucky_number = 3
+
+    expected = "Jackpot! You won the grand prize!"
+
+    #Invoke
+
+    actual = Dice_Game.play_game(lucky_number, dice_value1, dice_value2)
+
+    #Analyze
+
+    assert actual == expected
+
+    #Result
+    print("Testing 2 for play game have passed.")
 
 
 def main():
